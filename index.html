@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC - Survey Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 class="text-center" id="title">FCC - Survey Form</h1>
+
+	<main>
+		<p id="description"></p>
+	</main>
+
+		<form>
+			<div class="form-group" id="survey-form">
+				<label for="name" id="name-label">Name:</label>
+				<input type="text" name="name" placeholder="Enter your name" class="form-control" id="name" required>
+				<label for="age" id="number-label">Age (Between 18 and 65):</label>
+				<input type="number" min="18" max="65" name="age" placeholder="Enter your age" class="form-control" required>
+				<div class="form-check">
+					<label class="form-check-label" for=""></label>	
+					<input class="form-check-input" type="radio">
+				</div>
+				<label for="email" id="email-label">Email:</label>
+				<input type="email" name="email" placeholder="Enter your email: example@example.com" class="form-control" id="email" required> 
+				<label for="password">Password:</label>
+				<input type="password" name="password" placeholder="Enter your password" class="form-control" required>				
+				<button type="submit" id="submit" class="btn btn-primary text-center">Submit</button>
+			</div>
+		</form>
+	
+</body>
+</html>
