@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Song+Myung');
+
 body{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2em;
 	width: 40%;
+	font-family: 'Song Myung', serif;
+	background: #c6dcff;
+}
+form{
+	background: #fafafa;
+	padding: 1.5em;
+	border-radius: 3%;
 }
 form *{
 	margin-top: 1em;
@@ -12,6 +21,22 @@ input:invalid {
   border: 1px solid red;
 }
 
-·title{
-	font-family: Verdana;
+//Media Queries
+@media only screen and (max-width: 700px){
+	body{
+		width: 100%;
+		margin-top: 1em;
+	}
+	form{
+		padding: 1em;
+	}
+}
+@media only screen and (max-width: 900px){
+	body{
+		width: 70%;
+		margin-top: 1em;
+	}
+	form{
+		padding: 1em;
+	}
 }
